@@ -17,39 +17,75 @@ namespace FizzBuzz
                 int ansFiftee;
 
                 ansThree = i % 3;
+                ansFive = i % 5;
+                ansFiftee = i % 15;
 
-                if (ansThree == 0)
+                if (ansFiftee == 0)
                 {
-                    ansFive = i % 5;
+                   
+                    //if (ansFive == 0)
+                    //{
+
+                        
+                    //    if (ansFiftee == 0)
+                    //    {
+
+                    //        Console.WriteLine(i + "Fizzbuzz");
+                    //    }
+                    //    else
+                    //    {
+
+
+                    //        Console.WriteLine(i);
+                    //    }
+
+
+
+                    //    Console.WriteLine(i + "buzz");
+                    //}
+
+                    //else
+                    //{
+
+
+                    //    Console.WriteLine(i);
+                    //}
+
+
+                    Console.WriteLine(i + "FizzBuzz");
+                }
+
+
+                else
+                {
+
+
                     if (ansFive == 0)
                     {
 
-                        ansFiftee = i % 15;
-                        if (ansFiftee == 0)
-                        {
 
-                            Console.WriteLine(i + "Fizzbuzz");
-                        }
-                        else
-                        {
+                        Console.WriteLine(i + "Buzz");
 
 
-                            Console.WriteLine(i);
-                        }
-
-
-
-                        Console.WriteLine(i + "buzz");
                     }
                     else
                     {
 
+                        if (ansThree == 0)
+                        {
+                            Console.WriteLine(i + "Fizz");
+                        }
 
-                        Console.WriteLine(i);
+                        else
+                        {
+
+                            Console.WriteLine(i);
+                        }
+
                     }
 
 
-                    Console.WriteLine(i + "Fizz");
+
                 }
 
                
